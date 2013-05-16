@@ -9,7 +9,7 @@ Walkthrough:
 * Build a song repeater
     * Create an unordered list using the ['ng-repeat'](http://docs.angularjs.org/api/ng.directive:ngRepeat) attribute.
     * Code:
-    ```html
+    ```
     <ul>
       <li ng-repeat="song in songs">
       </li>
@@ -29,6 +29,7 @@ Walkthrough:
    
         expect(ctrl).toBeDefined();
       });
+
     });
     ```
 * Run d'em...tests..tests..tests
@@ -59,6 +60,7 @@ Walkthrough:
    
         expect(ctrl).toBeDefined();
       });
+
     });
     ```
 * Run d'em...tests..tests..tests
