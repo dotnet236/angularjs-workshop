@@ -6,10 +6,10 @@ describe('SongCtrl', function(){
     expect(ctrl).toBeDefined();
   });
 
-  it('should create an empty "songs" object', function() {
+  it('should create two items in our songs model', function() {
     var scope = { }
     var ctrl = new SongCtrl(scope);
 
-    expect(scope.songs.length).toBe(0);
+    expect(scope.songs.length).toBe(2);
   });
 });
