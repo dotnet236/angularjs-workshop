@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <script type='text/javascript' src='lib/angular/angular.js'></script>
 </head>
-<body>
-  <p>Hello {{ 'World' + '?' }}</p>
+<body ng-controller='songCtrl'>
+  <ul>
+    <li ng-repeat="song in songs">
+    </li>
+  </ul>
 </body>
 </html>
