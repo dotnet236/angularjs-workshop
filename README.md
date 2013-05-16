@@ -17,11 +17,11 @@ Walkthrough:
 </ul>
 ```
 * Start your test server
+  * ./scripts/test.sh
 
 ![](https://s3.amazonaws.com/uploads.hipchat.com/18058/79163/ta0nbmhu0gyfrqy/Screen%20Shot%202013-05-16%20at%206.21.48%20PM.png)
 
 * Red Light Test..Test..Test
-    * Create spec to validate the song controller exists.
     * Use Jasmine's [toBeDefined](https://github.com/pivotal/jasmine/wiki/Matchers) matcher to validate the song controller's existence.
     * Add assertion to test/unit/songControllerSpec.js
     * Code:
@@ -38,7 +38,8 @@ describe('SongCtrl', function(){
 });
 ```
 
-* Run d'em red light...tests..tests..tests
+* Watch d'em red light...tests..tests..tests
+    * Karma test runner executes automatically.
 
 ![](https://s3.amazonaws.com/uploads.hipchat.com/18058/79163/whws7epv0uuk5di/Screen%20Shot%202013-05-16%20at%206.22.37%20PM.png)
 
@@ -53,7 +54,6 @@ function SongCtrl($scope) {
 ```
 
 * Watch d'em green light...tests..tests..tests
-    * Karma test runner executes automatically.
     * "SongCtrl should create an empty 'songs' object" test should pass.
     * Generate [Karma](http://4.bp.blogspot.com/_haAzLMekLyU/TBuvq_ef_4I/AAAAAAAACdw/iCLVVm31xbQ/s1600/bliss.jpg)
 
