@@ -1,12 +1,12 @@
-**Chatper 1**
+**Chatper 2**
 
 Walkthrough:
 
-* Install node.js
-    * Determine if node is already installed and > v0.8
-        * node --version
-    * If not, install node from [nodejs.org](http://nodejs.org/)
-* Install karma test runner globally
-    * npm install -g karma
-* Start Web Server
-    * ./scripts/web-server.js
+* Modify to index.html to be an angularjs application
+    * Add 'angular.js' script to the page
+        * Located at 'lib/angular/angular.js'
+    * Add 'ng-app' attribute to the HTML tag
+* Add hello world template expression
+    * Create a paragraph tag
+    * Add expression to paragrah tag
+    Hello {{ 'World' + '? }}
