@@ -22,14 +22,18 @@ function SongCtrl($scope) {
 
 * Uhhoh...now are tests are failing
 
+![](https://s3.amazonaws.com/uploads.hipchat.com/18058/79163/q8340biojplt4am/Screen%20Shot%202013-05-16%20at%207.19.44%20PM.png)
+
 * Let's fix that
-    * Modify test to have correct length assertion
+    * Modify test to have correct length assertion and desription
 
 ```javascript
-  it('should create an empty "songs" object', function() {
+  it('should create two items in our songs model', function() {
     ...
     expect(scope.songs.length).toBe(2);
   });
 ```
 
 * Yeaaaa!!! We're back to green
+
+![](https://s3.amazonaws.com/uploads.hipchat.com/18058/79163/71qr1qbfseo2430/Screen%20Shot%202013-05-16%20at%207.22.54%20PM.png)
