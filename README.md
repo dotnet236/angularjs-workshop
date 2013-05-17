@@ -7,7 +7,7 @@ Walkthrough:
 * Let's add an End To End test in test/e2e/scenario.js
 
 ```javascript
-describe('Song table', function() {
+describe('Add song form', function() {
 
   beforeEach(function() {
     browser().navigateTo('../../app/index.html');
