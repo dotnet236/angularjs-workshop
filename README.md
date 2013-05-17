@@ -5,6 +5,7 @@ Walkthrough:
 * Let's display some songs
 * But first...we must...test...test..test
 * Let's add an End To End test in test/e2e/scenario.js
+
 ```javascript
 describe('Song table', function() {
 
@@ -21,6 +22,7 @@ describe('Song table', function() {
 * And a failure...
 
 * Let's fix it by adding a row for each song in index.html
+
 ```html
 <tr ng-repeat="song in songs" class='songs'>
   <td>{{song.name}}</td>
@@ -31,6 +33,7 @@ describe('Song table', function() {
 * Refresh and see the songs listed!!!
 * But I wanna add my own songs :(
 * Fair enough...but first...we must end to end...test...test..test
+
 ```javascript
 describe('Song table', function() {
 
