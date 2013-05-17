@@ -13,7 +13,7 @@ describe('Add song form', function() {
     browser().navigateTo('../../app/index.html');
   });
 
-  it('should add the song a user enters to the list', function() {
+  it('should start with two songs listed', function() {
     expect(repeater('.songs').count()).toBe(2);
   });
 });
@@ -30,7 +30,8 @@ describe('Add song form', function() {
 </tr>
 ```
 
-* Refresh and see the songs listed!!!
+* Add we pass...thank god..I was worred.
+* Noew you can [refresh](http://localhost:8000/app/index.html) and see the songs listed!!!
 * But I wanna add my own songs :(
 * Fair enough...but first...we must end to end...test...test..test
 
@@ -42,7 +43,9 @@ describe('Song table', function() {
   });
 
   it('should add the song a user enters to the list', function() {
-    input('name').enter('Song 1')
+    input('song.name').enter('Song 1')
+    element('button', 'add button').click()
+    expect(repeater('.songs').count()).toBe(3);
   });
 });
 ```
