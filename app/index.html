@@ -11,16 +11,36 @@
   <script type='text/javascript' src='js/controllers.js'></script>
 </head>
 <body ng-controller='songCtrl' style="background-color:#E3DEE0">
-  <div class="container">
+  <div class="container" style='background-color:white;padding:20px;'>
     <img width="140" height="140" src='http://www.wallgc.com/images/2013/01/funky-colorful-hd.jpg' class="img-circle" />
     <span class="lead">CTCT Funky Town Radio</span>
-
-    <h2>Songs:</h2>
-    <table class='table table-hover'>
-      <tr>
-        <th>Name</th>
-      </tr>
-    </table>
+    <div class="row" style='margin-top:50px;'>
+      <div class="span3 lead">
+        <strong>
+          Songs:
+        </strong>
+      </div>
+      <div class="span4">
+      </div>
+      <div class="span5">
+        <form novalidate class="simple-form">
+          <input class='input-medium' name='name' ng-model="song.name" placeholder='name'>
+          <input class='input-medium' name='url' ng-model="song.url" placeholder='mp3 url'>
+          <button class='btn btn-success' ng-click="add(song)" style='margin-bottom:10px'>Add</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <table class='table table-hover'>
+        <tr>
+          <th style='border:none'>Name</th>
+        </tr>
+        <tr ng-repeat="song in songs" class='songs'>
+          <td>{{song.name}}</td>
+          <td><a ng-href="">Play</<a></td>
+        </tr>
+      </table>
+    </div>
   </div>
 </body>
 </html>
