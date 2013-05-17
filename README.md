@@ -18,9 +18,10 @@ Example: git checkout chapter-1-nodejs
 
 **Workshop Chapters:**
 
-* Chapter 1 - Empty node.js application
-* Chapter 2 - Views - Displaying Hello World 
-* Chapter 3 - Models & Scope - Creating a Song Model
-* Chapter 4 - Data Binding - Populating a list of songs
-* Chapter 5 - Routing - Song specific urls
-* Chapter 6 - Adding Audio - Play that funky HTML 5 beat
+* [Chapter 1](https://github.com/dotnet236/angularjs-workshop/tree/chapter-1-nodejs) - NodeJS - Initial application
+* [Chapter 2](https://github.com/dotnet236/angularjs-workshop/tree/chapter-2-views-hello-world)  - Views - Displaying Hello World 
+* [Chapter 3](https://github.com/dotnet236/angularjs-workshop/tree/chapter-3-creating-a-song-controller) - Controllers - Creating a Song Controller
+* [Chapter 4](https://github.com/dotnet236/angularjs-workshop/tree/chapter-4-creating-a-song-model) - Models & Scope - Creating a Song Model
+* [Chapter 5](https://github.com/dotnet236/angularjs-workshop/tree/chapter-5-binding-to-the-song-model) - Data Binding - Populating a list of songs
+* [Chapter 6](https://github.com/dotnet236/angularjs-workshop/tree/chapter-6-playing-the-song) - Adding Audio - Play that [funky HTML 5 beat](http://ccmixter.org/files/texasradiofish/41716)
+* [Chapter 7](https://github.com/dotnet236/angularjs-workshop/tree/chapter-7-creating-song-urls) - Routing - Song specific urls
