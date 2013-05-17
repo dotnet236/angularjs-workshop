@@ -1,4 +1,4 @@
-function songCtrl($scope) {
+function SongCtrl($scope) {
   $scope.songs = [
      {
        "name":"Human Race",
@@ -9,4 +9,15 @@ function songCtrl($scope) {
        "url": "http://ccmixter.org/content/Rey_Izain/Rey_Izain_-_Pieces_-_12_disco_mix.mp3"
      }
    ];
+
+  $scope.add = function(song) {
+    $scope.songs.push(song);
+  } 
+
+  $scope.play = function(song) {
+    angular.element('audio').attr({
+      'src': song.url,
+    });
+    return false;
+  }
 }
